@@ -21,6 +21,9 @@
       color: #fff;
       font-size: 24px;
     }
+    span{
+      color: #ffaa00;
+    }
 
     /* Navbar styling */
     header {
@@ -32,18 +35,44 @@
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
     }
 
+/* performance section */
+
+.prf {
+  background: #323232a2;
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.prf h3 {
+  color: #ffaa00;
+  margin-top: 0;
+}
+
+.prf p {
+  color: #fff;
+}
+
+.prf:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+
     /* code section */
     .code {
       margin-bottom: 20px;
       padding: 15px;
       background: #343434a0;
 
-      border-left: 5px solid #4CAF50;
+      border-left: 5px solid #f9f4f4;
       border-radius: 5px;
     }
 
     .code a {
-      color: #727070;
+      color: #bdf3ffc7;
       text-decoration: none;
       font-weight: bold;
     }
@@ -127,7 +156,19 @@
       margin-top: 10px;
       /* Offset for fixed navbar */
     }
-
+#c0{
+  
+  background-image: url('https://wallpapercave.com/wp/wp5063339.png');
+      /* Replace with your actual image URL */
+      background-size: cover;
+      /* Ensures the image covers the entire area */
+      background-position: center;
+      /* Centers the image */
+      background-repeat: no-repeat;
+      /* Prevents the image from repeating */
+      /* Makes the container full viewport height */
+      /* filter: blur(1px); */
+}
     #c1 {
       background-image: url('https://w0.peakpx.com/wallpaper/880/340/HD-wallpaper-squid-game-symbol-3-black-and-neon-squid-game-symbol-squid-game-neon-symbol-squid-game-black-boys.jpg');
       /* Replace with your actual image URL */
@@ -148,7 +189,15 @@
       /* Centers the image */
       background-repeat: no-repeat;
 }
-
+#c3{
+  background-image: url('https://cdn.wallpapersafari.com/74/30/a0SK7e.jpg');
+      /* Replace with your actual image URL */
+      background-size:cover;
+      /* Ensures the image covers the entire area */
+      background-position: center;
+      /* Centers the image */
+      background-repeat: no-repeat;
+}
     .content-box {
       background-color: #414141;
       padding: 5rem;
@@ -241,6 +290,19 @@
     .business-case p {
       color: #fff;
     }
+
+    p.amazing {
+  color: #949494;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 
+    -1px -1px 0 rgba(0, 0, 0, 0.8),  
+     1px -1px 0 rgba(0, 0, 0, 0.8),
+    -1px  1px 0 rgba(0, 0, 0, 0.8),
+     1px  1px 0 rgba(0, 0, 0, 0.8);
+}
+
+
 
     /* Algorithm Box Styling */
     .algorithm-box {
@@ -349,12 +411,9 @@
     </nav>
   </header>
   <section id="intro" class="section">
-    <div class="content-box">
-      <div class="net_logo">
-        <img class="netl" src="https://1000logos.net/wp-content/uploads/2017/05/Netflix-symbol.jpg"
-          alt="Netflix Logo" />
-      </div>
-      <p>
+    <div class="content-box" id="c0">
+     
+      <p class="amazing">
         When it started out in 1997 as a DVD rental service, Netflix has grown into a well-known video-on-demand
         platform with more than 200 million customers. Netflix's business strategy is focused on meeting the demands of
         its clientele, which includes tech-savvy college students, young adults, professionals, and entrepreneurs. Its
@@ -542,118 +601,262 @@
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Ensuring Uninterrupted Video Playback</span>
         </div>
-        <a href="https://github.com/">Heap Design and Sliding Window</a>
+        <a href="https://github.com/Pramod26naik/aps-codes/blob/main/heap.cpp">Heap Design</a>
+        <a href="https://github.com/Pramod26naik/aps-codes/blob/main/sliding_window.cpp">Sliding Window</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Search Functionality</span>
         </div>
-        <a href="https://github.com/">Trie and TF-IDF Implementation</a>
+        <a href="https://github.com/guillaume-chevalier/Enhanced-TFIDF">Trie and TF-IDF Implementation</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Suggestion for a Video</span>
         </div>
-        <a href="https://github.com/">Collaborative Filtering and Content-Based Filtering</a>
+        
+        <a href="https://github.com/cran/recosystem">Content-Based Filtering</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Content Licensing and Acquisition</span>
         </div>
-        <a href="https://github.com/">Linear Programming and Game Theory</a>
+        <a href="https://github.com/coin-or/Clp">Linear Programming</a>
+        
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Regional Content Customization</span>
         </div>
-        <a href="https://github.com/">NLP and Cluster Analysis</a>
+        <a href="https://github.com/explosion/spaCy">NLP </a>
+        
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Collaborations and Partnerships</span>
         </div>
-        <a href="https://github.com/">Network Optimization and Revenue-Sharing</a>
+        <a href="https://github.com/ray-project/ray">Network Optimization </a>
+        
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>User Data Security and Privacy</span>
         </div>
-        <a href="https://github.com/">Encryption and Anomaly Detection</a>
+        <a href="https://github.com/weidai11/cryptopp">Encryption</a> <br>
+        <a href="https://github.com/numenta/NAB">Anomaly detection</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Parental Controls and Kids Profiles</span>
         </div>
-        <a href="https://github.com/">Rule-Based Filtering and Age-Detecting Algorithms</a>
+        <a href="https://github.com/Pramod26naik/aps-codes/blob/main/rule_based.cpp">Rule-Based Filtering</a> <br>
+        <a href="https://github.com/yu4u/age-gender-estimation">Age-detecting algorithms</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Customer Support and Satisfaction</span>
         </div>
-        <a href="https://github.com/">Chatbot AI and Sentiment Analysis</a>
+        <a href="https://github.com/gunthercox/ChatterBot">Chatbot AI</a> <br>
+        <a href="https://github.com/cjhutto/vaderSentiment">Sentiment analysis</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Subscription Pricing Strategy</span>
         </div>
-        <a href="https://github.com/">Price Elasticity Models and A/B Testing</a>
+        <a href="https://github.com/pranavtumkur/Perform-AB-Testing-to-determine-the-best-version-of-an-E-Commerce-website">A/B testing<a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Live Streaming and Interactive Content</span>
         </div>
-        <a href="https://github.com/">Real-Time Messaging Protocol (RTMP) and Interactive Video Algorithms</a>
+        <a href="https://github.com/arut/nginx-rtmp-module">Real-Time Messaging Protocol (RTMP) and Interactive Video Algorithms</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>User Interface Personalization</span>
         </div>
-        <a href="https://github.com/">Machine Learning Models and A/B Testing</a>
+        <a href="https://github.com/scikit-learn/scikit-learn">Machine Learning Models and A/B Testing</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Optimizing the Content Delivery Network (CDN)</span>
         </div>
-        <a href="https://github.com/">Load Distribution and Edge Caching</a>
+        <a href="https://github.com/nginxinc/kubernetes-ingress">Load Distribution</a> <br>
+        <a href="https://github.com/apache/trafficserver">Edge caching</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Data Analytics and Insights</span>
         </div>
-        <a href="https://github.com/">Big Data Analytics and Predictive Analytics</a>
+        <a href="https://github.com/apache/spark">Big Data Analytics</a>
+        <br>
+        <a href="https://github.com/josephmisiti/awesome-machine-learning">Predictive Analytics</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>Content-Based Filtering</span>
         </div>
-        <a href="https://github.com/">NLP Models</a>
+        <a href="https://github.com/explosion/spaCy">NLP Models</a>
       </div>
       <div class="code">
         <div class="title">
           <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
           <span>User Engagement Analysis</span>
         </div>
-        <a href="https://github.com/">Association Rule Mining</a>
+        <a href="https://github.com/RapidsAI/cuml">Association Rule Mining</a>
       </div>
     </div>
   </section>
   <section id="performance-analysis" class="section">
-    <div class="content-box">
-      <p>Performance analysis content goes here.</p>
+    <div class="content-box" id="c3">
+      <div class="prf">
+        <h3>Mozilla DeepSpeech</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> High computational cost for training.</p>
+    </div>
+    <div class="prf">
+        <h3>Heap Design and Sliding Window</h3>
+        <p><strong>Heap Design:</strong></p>
+        <p>Time Complexity: O(log n)</p>
+        <p>Space Complexity: O(n)</p>
+        <p><strong>Sliding Window:</strong></p>
+        <p>Time Complexity: O(n)</p>
+        <p>Space Complexity: O(k)</p>
+        <p><strong>Limitations:</strong> Heap can have overhead; sliding window limited by window size.</p>
+    </div>
+    <div class="prf">
+        <h3>Trie and TF-IDF Implementation</h3>
+        <p><strong>Trie:</strong></p>
+        <p>Time Complexity: O(m)</p>
+        <p>Space Complexity: O(alphabet_size * key_length * number_of_keys)</p>
+        <p><strong>TF-IDF:</strong></p>
+        <p>Time Complexity: O(N + M)</p>
+        <p>Space Complexity: O(NM)</p>
+        <p><strong>Limitations:</strong> Trie can consume a lot of memory; TF-IDF may be less effective for short documents.</p>
+    </div>
+    <div class="prf">
+        <h3>Content-Based Filtering</h3>
+        <p><strong>Time Complexity:</strong> O(nm)</p>
+        <p><strong>Space Complexity:</strong> O(nm)</p>
+        <p><strong>Limitations:</strong> Needs well-defined features; can struggle with new items (cold start).</p>
+    </div>
+    <div class="prf">
+        <h3>Linear Programming</h3>
+        <p><strong>Time Complexity:</strong> Depends on the method</p>
+        <p><strong>Space Complexity:</strong> O(nm)</p>
+        <p><strong>Limitations:</strong> Can be computationally expensive for large-scale problems.</p>
+    </div>
+    <div class="prf">
+        <h3>NLP</h3>
+        <p><strong>Time Complexity:</strong> Varies based on the model</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> High computational cost and large memory requirements.</p>
+    </div>
+    <div class="prf">
+        <h3>Network Optimization</h3>
+        <p><strong>Time Complexity:</strong> Varies</p>
+        <p><strong>Space Complexity:</strong> O(V + E)</p>
+        <p><strong>Limitations:</strong> Scalability issues for very large networks.</p>
+    </div>
+    <div class="prf">
+        <h3>Encryption</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Key management can be complex; performance overhead.</p>
+    </div>
+    <div class="prf">
+        <h3>Anomaly Detection</h3>
+        <p><strong>Time Complexity:</strong> Varies</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> False positives/negatives; performance depends on the algorithm used.</p>
+    </div>
+    <div class="prf">
+        <h3>Rule-Based Filtering</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Can become complex and hard to manage with a large number of rules.</p>
+    </div>
+    <div class="prf">
+        <h3>Age-Detecting Algorithms</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Accuracy depends on training data quality.</p>
+    </div>
+    <div class="prf">
+        <h3>Chatbot AI</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> May struggle with understanding context and nuances.</p>
+    </div>
+    <div class="prf">
+        <h3>Sentiment Analysis</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Can be less accurate with sarcasm, irony, or context-specific language.</p>
+    </div>
+    <div class="prf">
+        <h3>A/B Testing</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Requires a significant amount of data; can be time-consuming.</p>
+    </div>
+    <div class="prf">
+        <h3>Real-Time Messaging Protocol (RTMP)</h3>
+        <p><strong>Time Complexity:</strong> O(n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Bandwidth and latency issues.</p>
+    </div>
+    <div class="prf">
+        <h3>Load Distribution</h3>
+        <p><strong>Time Complexity:</strong> O(n log n)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Scalability and fault tolerance.</p>
+    </div>
+    <div class="prf">
+        <h3>Edge Caching</h3>
+        <p><strong>Time Complexity:</strong> O(1)</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Cache consistency and invalidation.</p>
+    </div>
+    <div class="prf">
+        <h3>Big Data Analytics</h3>
+        <p><strong>Time Complexity:</strong> Varies</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Requires significant computational resources.</p>
+    </div>
+    <div class="prf">
+        <h3>Predictive Analytics</h3>
+        <p><strong>Time Complexity:</strong> O(n) for training; O(1) for prediction</p>
+        <p><strong>Space Complexity:</strong> O(n)</p>
+        <p><strong>Limitations:</strong> Model accuracy and interpretability.</p>
+    </div>
+    <div class="prf">
+        <h3>Content-Based Filtering (NLP Models)</h3>
+        <p><strong>Time Complexity:</strong> O(nm)</p>
+        <p><strong>Space Complexity:</strong> O(nm)</p>
+        <p><strong>Limitations:</strong> Cold start problem; requires extensive feature extraction.</p>
+    </div>
+    <div class="prf">
+        <h3>Association Rule Mining</h3>
+        <p><strong>Time Complexity:</strong> O(n^2 * m)</p>
+        <p><strong>Space Complexity:</strong> O(nm)</p>
+        <p><strong>Limitations:</strong> High computational cost for large datasets.</p>
+    </div>
     </div>
   </section>
   <script>
