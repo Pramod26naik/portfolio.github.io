@@ -24,12 +24,46 @@
 
     /* Navbar styling */
     header {
-      background-color: #414141;
+      background-color: #242424c7;
       position: fixed;
       width: 100%;
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+    }
+
+    /* code section */
+    .code {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #343434a0;
+
+      border-left: 5px solid #4CAF50;
+      border-radius: 5px;
+    }
+
+    .code a {
+      color: #727070;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .code a:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      float: left;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      font-size: 1.2em;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -93,14 +127,27 @@
       margin-top: 10px;
       /* Offset for fixed navbar */
     }
-    #c1 {
-  background-image: url('https://i.pinimg.com/originals/42/cb/45/42cb45faf80b01264f6d5ef84a4554af.jpg'); /* Replace with your actual image URL */
-  background-size: cover; /* Ensures the image covers the entire area */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-   /* Makes the container full viewport height */
-}
 
+    #c1 {
+      background-image: url('https://w0.peakpx.com/wallpaper/880/340/HD-wallpaper-squid-game-symbol-3-black-and-neon-squid-game-symbol-squid-game-neon-symbol-squid-game-black-boys.jpg');
+      /* Replace with your actual image URL */
+      background-size: cover;
+      /* Ensures the image covers the entire area */
+      background-position: center;
+      /* Centers the image */
+      background-repeat: no-repeat;
+      /* Prevents the image from repeating */
+      /* Makes the container full viewport height */
+    }
+#c2{
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/715/17/desktop-wallpaper-dali-mask-money-heist-metal-poster-print.jpg');
+      /* Replace with your actual image URL */
+      background-size: cover;
+      /* Ensures the image covers the entire area */
+      background-position: center;
+      /* Centers the image */
+      background-repeat: no-repeat;
+}
 
     .content-box {
       background-color: #414141;
@@ -121,6 +168,11 @@
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
     }
 
+    .algorithm-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    }
+
     /* Smooth scrolling */
     html {
       scroll-behavior: smooth;
@@ -132,7 +184,7 @@
       flex-direction: column;
       gap: 1rem;
       margin-top: 2rem;
-      background-image: url('https://images2.minutemediacdn.com/image/fetch/w_736,h_485,c_fill,g_auto,f_auto/https%3A%2F%2Fwinteriscoming.net%2Ffiles%2F2018%2F11%2FScreen-Shot-2018-11-01-at-10.33.56-AM-850x560.jpg');
+      background-image: url('https://mrwallpaper.com/images/hd/download-stranger-things-wallpaper-gzf86mf9bsjlt26y.jpg');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -180,6 +232,7 @@
       margin-bottom: 2rem;
     }
 
+
     .business-case h3 {
       color: #e50914;
       margin-bottom: 0.5rem;
@@ -195,6 +248,7 @@
       padding: 1rem;
       border-radius: 8px;
       margin-top: 1rem;
+      transition: transform 0.3s, box-shadow 0.3s;
     }
 
     .algorithm-box h4 {
@@ -217,6 +271,8 @@
         /* Ensure nav items are in a row */
         justify-content: space-between;
         align-items: center;
+
+        
       }
 
       .netl {
@@ -299,14 +355,12 @@
           alt="Netflix Logo" />
       </div>
       <p>
-        Founded in 1997, Netflix transformed from a DVD rental service to a
-        leading video-on-demand platform with over 200 million subscribers.
-        Catering to tech-savvy users, including teenagers, college students,
-        entrepreneurs, and professionals, Netflix thrives on its
-        customer-centric approach. Its success stems from personalized content
-        recommendations, multi-device accessibility, and innovative marketing.
-        Continuous data analysis and market adaptation have solidified
-        Netflix's leadership in digital streaming.
+        When it started out in 1997 as a DVD rental service, Netflix has grown into a well-known video-on-demand
+        platform with more than 200 million customers. Netflix's business strategy is focused on meeting the demands of
+        its clientele, which includes tech-savvy college students, young adults, professionals, and entrepreneurs. Its
+        multi-device accessibility, creative marketing techniques, and personalised content recommendations are the main
+        factors contributing to its success. Netflix has maintained its dominant market share in digital streaming by
+        continuously analysing data and making necessary modifications.
       </p>
     </div>
   </section>
@@ -314,24 +368,27 @@
     <section id="objectives" class="section">
       <div class="content-box objectives">
         <div class="objective">
-          <h3>Enhance User Experience</h3>
-          <p>Improve the overall user interface and experience to ensure a smooth and engaging streaming journey.</p>
+          <h3>Improve User Experience</h3>
+          <p>To ensure a seamless and enjoyable streaming experience, enhance the user interface and overall experience.
+          </p>
         </div>
         <div class="objective">
-          <h3>Optimize Content Discovery</h3>
-          <p>Make it easier for users to find content they love through advanced recommendation systems.</p>
+          <h3>Increased Content Finding</h3>
+          <p>Make it simpler for consumers to discover material they enjoy by implementing sophisticated recommendation
+            algorithms.</p>
         </div>
         <div class="objective">
-          <h3>Increase User Engagement</h3>
-          <p>Boost user interaction and engagement with the platform through personalized content and features.</p>
+          <h3>Boost User Involvement</h3>
+          <p>You can increase platform engagement and user involvement by offering customised features and content.</p>
         </div>
         <div class="objective">
-          <h3>Expand Global Reach</h3>
-          <p>Grow the platform's presence and accessibility across different regions and demographics worldwide.</p>
+          <h3>Boost Global Visibility</h3>
+          <p>Expand the platform's global reach and visibility among various demographic and geographic groups.</p>
         </div>
         <div class="objective">
-          <h3>Innovate Continuously</h3>
-          <p>Constantly introduce new technologies and features to stay ahead in the competitive streaming market.</p>
+          <h3>Never Give Up Inventing</h3>
+          <p>Keep ahead of the curve in the fiercely competitive streaming business by continuously releasing new
+            features and cutting-edge innovations.</p>
         </div>
       </div>
     </section>
@@ -340,140 +397,258 @@
     <div class="content-box" id="c1">
       <h1>Business cases</h1>
       <div class="algorithm-box">
-        <h4>Video Playback: Ensuring smooth playback despite varying network conditions</h4>
+        <h4>Multi-Language Support: By providing a range of languages, you may boost accessibility and user interaction.
+        </h4>
         <p>
-          Heap Design: Manages video buffering, prioritizing segments closest to the playback position.
-          Sliding Window: Maintains a fixed-size buffer for continuous streaming.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Search Functionality: Providing accurate and relevant search results quickly</h4>
-        <p>
-          Trie Data Structure: Efficiently stores and retrieves strings, useful for autocomplete suggestions.
-          TF-IDF (Term Frequency-Inverse Document Frequency): Ranks search results based on relevance to the search query.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Video Recommendations: Suggesting content that users are likely to enjoy</h4>
-        <p>
-          Collaborative Filtering: Recommends content based on the preferences of similar users.
-          Content-Based Filtering: Recommends content similar to what the user has previously watched.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Content Licensing and Acquisition: Strategizing and negotiating with content creators to acquire rights for popular content</h4>
-        <p>
-          Linear Programming: Optimizes the allocation of budget for content acquisition.
-          Game Theory Models: Analyzes competitive strategies in content bidding.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Regional Content Customization: Adapting and customizing content for regional tastes and languages</h4>
-        <p>
-          Natural Language Processing (NLP): Translates and localizes content.
-          Cluster Analysis: Identifies regional content preferences and trends.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Parental Controls and Kids Profiles: Ensuring a safe and appropriate viewing experience for children</h4>
-        <p>
-          Rule-Based Filtering: Restricts access to content based on ratings and parental settings.
-          Age Detection Algorithms: Suggests age-appropriate content based on profile settings.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>User Data Privacy and Security: Protecting user information and ensuring compliance with regulations</h4>
-        <p>
-          Encryption Algorithms: Secures data during transmission and storage.
-          Anomaly Detection: Identifies and mitigates security breaches and data leaks.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Partnerships and Collaborations: Forming strategic partnerships to enhance reach and accessibility</h4>
-        <p>
-          Network Optimization Algorithms: Improves content delivery through partner networks.
-          Revenue Sharing Models: Allocates revenue fairly among partners based on engagement metrics.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Customer Support and Satisfaction: Providing timely and effective customer support</h4>
-        <p>
-          Chatbot AI: Automates responses to common customer queries.
-          Sentiment Analysis: Monitors customer feedback to identify and address issues proactively.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Subscription Pricing Strategy: Developing dynamic pricing models to attract diverse user segments</h4>
-        <p>
-          Price Elasticity Models: Analyzes the impact of price changes on subscriber numbers.
-          A/B Testing: Tests different pricing strategies to find the most effective one.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Live Streaming and Interactive Content: Offering real-time streaming and interactive features</h4>
-        <p>
-          RTMP (Real-Time Messaging Protocol): Ensures low-latency live streaming.
-          Interactive Video Algorithms: Manages user interactions and real-time feedback during live streams.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>User Interface Personalization: Creating a personalized and intuitive user interface</h4>
-        <p>
-          Machine Learning Models: Personalizes the UI based on user behavior and preferences.
-          A/B Testing: Continuously tests and optimizes UI elements for better user engagement.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Content Delivery Network (CDN) Optimization: Efficiently delivering content to users around the world</h4>
-        <p>
-          Load Balancing Algorithms: Distributes content delivery load across multiple servers.
-          Edge Caching: Stores content closer to the user's location to reduce latency.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Data Analytics and Insights: Analyzing vast amounts of user data to drive business decisions</h4>
-        <p>
-          Big Data Analytics: Processes and analyzes large datasets to extract meaningful insights.
-          Predictive Analytics: Forecasts user behavior and trends to inform strategic decisions.
-        </p>
-      </div>
-      
-      <div class="algorithm-box">
-        <h4>Algorithm: Content-Based Filtering</h4>
-        <p>
-          In addition to collaborative filtering, Netflix employs
-          content-based filtering. This algorithm recommends content based
-          on the characteristics of the shows and movies a user has
-          previously watched, such as genre, director, and cast.
+          Mozilla DeepSpeech is an open-source ASR engine built on deep learning.
         </p>
       </div>
       <div class="algorithm-box">
-        <h4>User Engagement Analysis: Understanding user behavior to improve content and service delivery</h4>
+        <h4>Ensuring Uninterrupted Video Playback: Heap Design and Sliding Window</h4>
         <p>
-          Association Rule Mining: Discovers patterns in user interactions.
-          Cluster Analysis: Segments users based on viewing habits.
+          The Heap Design controls video buffering and prioritizes segments nearest to the playback point, even under
+          varying network conditions. Sliding Window maintains a constant buffer size for smooth streaming.
         </p>
       </div>
-      
+      <div class="algorithm-box">
+        <h4>Search Functionality: Delivering Pertinent, Fast, and Accurate Search Results</h4>
+        <p>
+          The Trie data structure quickly stores and retrieves strings, beneficial for autocomplete suggestions. Term
+          Frequency-Inverse Document Frequency (TF-IDF) ranks search results based on relevance to the query.
+        </p>
+      </div>
+
+      <div class="algorithm-box">
+        <h4>Suggestion for a Video: Collaborative Filtering and Content-Based Filtering</h4>
+        <p>
+          Content is suggested using collaborative filtering, which takes into account the preferences of similar users.
+          Content-Based Filtering recommends content based on the user's past viewing activity.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Content Licensing and Acquisition: Linear Programming and Game Theory Models</h4>
+        <p>
+          The process of developing a plan and negotiating with content creators to obtain rights to widely-used assets.
+          Linear programming optimizes budget allocation for content purchases. Game theory models analyze competitive
+          content bidding tactics.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Regional Content Customization: Natural Language Processing (NLP) and Cluster Analysis</h4>
+        <p>
+          How Netflix adapts and customizes content to suit regional languages and tastes. NLP translates and localizes
+          content. Cluster analysis analyzes localized content to identify trends and preferences.
+        </p>
+      </div>
+
+      <div class="algorithm-box">
+        <h4>Collaborations and Partnerships: Establishing Tactical Alliances to Increase Accessibility</h4>
+        <p>
+          Algorithms for network optimization enhance content dissemination through partner networks. Revenue-sharing
+          methods distribute income to partners equitably, considering engagement metrics.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>User Data Security and Privacy: Ensuring Compliance and Safeguarding Data</h4>
+        <p>
+          Encryption techniques secure user data during transmission and storage. Anomaly detection algorithms identify
+          and mitigate security holes and data breaches.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Parental Controls and Kids Profiles: Ensuring Safe and Appropriate Viewing for Children</h4>
+        <p>
+          Rule-Based Filtering limits content access based on parental controls and rating systems. Age-detecting
+          algorithms suggest age-appropriate content based on user preferences.
+        </p>
+      </div>
+
+      <div class="algorithm-box">
+        <h4>Customer Support and Satisfaction: Ensuring Client Pleasure through Timely and Efficient Service</h4>
+        <p>
+          Chatbot AI offers pre-programmed responses to commonly asked customer queries. Sentiment analysis monitors
+          customer feedback to identify issues early and take proactive measures.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Subscription Pricing Strategy: Developing Dynamic Pricing Structures</h4>
+        <p>
+          Price Elasticity Models analyze how changes in price impact subscriber numbers. A/B testing evaluates multiple
+          pricing strategies to determine the most effective approach.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Live Streaming and Interactive Content: Real-Time Messaging Protocol (RTMP) and Interactive Video Algorithms
+        </h4>
+        <p>
+          RTMP ensures low-latency live broadcasting. Interactive video algorithms manage user interactions and provide
+          real-time responses during live broadcasts.
+        </p>
+      </div>
+
+      <div class="algorithm-box">
+        <h4>User Interface Personalization: Creating a Personalized and User-Friendly Interface</h4>
+        <p>
+          Machine learning models adjust the user interface (UI) based on the user's activities and preferences. A/B
+          testing iteratively tests and refines UI elements to enhance engagement.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Optimizing the Content Delivery Network (CDN) for Efficient Content Delivery</h4>
+        <p>
+          Load distribution algorithms distribute content delivery load across multiple servers. Edge caching caches
+          content closer to the user's location to reduce latency.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>Data Analytics and Insights: Utilizing In-Depth User Data Analysis</h4>
+        <p>
+          Big Data analytics processes and analyzes large datasets to extract meaningful insights. Predictive analytics
+          forecasts user behavior and trends to guide strategic decisions.
+        </p>
+      </div>
+
+
+      <div class="algorithm-box">
+        <h4>Content-Based Filtering: Making Suggestions Based on Common Characteristics</h4>
+        <p>
+          Evaluates textual descriptions and content attributes using Natural Language Processing (NLP) to identify
+          patterns and similarities such as directors, actors, or genre.
+        </p>
+      </div>
+      <div class="algorithm-box">
+        <h4>User Engagement Analysis: Examining User Behavior and Preferences</h4>
+        <p>
+          Maximizes user engagement by utilizing association rule mining to discover patterns in user behavior,
+          enhancing platform functionality and content recommendations.
+        </p>
+      </div>
+
     </div>
     </div>
   </section>
   <section id="codes" class="section">
-    <div class="content-box">
-      <p>Code section content goes here.</p>
+    <div class="content-box" id="c2">
+
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Multi-Language Support</span>
+        </div>
+        <a href="https://github.com/mozilla/DeepSpeech">Mozilla DeepSpeech GitHub</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Ensuring Uninterrupted Video Playback</span>
+        </div>
+        <a href="https://github.com/">Heap Design and Sliding Window</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Search Functionality</span>
+        </div>
+        <a href="https://github.com/">Trie and TF-IDF Implementation</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Suggestion for a Video</span>
+        </div>
+        <a href="https://github.com/">Collaborative Filtering and Content-Based Filtering</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Content Licensing and Acquisition</span>
+        </div>
+        <a href="https://github.com/">Linear Programming and Game Theory</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Regional Content Customization</span>
+        </div>
+        <a href="https://github.com/">NLP and Cluster Analysis</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Collaborations and Partnerships</span>
+        </div>
+        <a href="https://github.com/">Network Optimization and Revenue-Sharing</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>User Data Security and Privacy</span>
+        </div>
+        <a href="https://github.com/">Encryption and Anomaly Detection</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Parental Controls and Kids Profiles</span>
+        </div>
+        <a href="https://github.com/">Rule-Based Filtering and Age-Detecting Algorithms</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Customer Support and Satisfaction</span>
+        </div>
+        <a href="https://github.com/">Chatbot AI and Sentiment Analysis</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Subscription Pricing Strategy</span>
+        </div>
+        <a href="https://github.com/">Price Elasticity Models and A/B Testing</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Live Streaming and Interactive Content</span>
+        </div>
+        <a href="https://github.com/">Real-Time Messaging Protocol (RTMP) and Interactive Video Algorithms</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>User Interface Personalization</span>
+        </div>
+        <a href="https://github.com/">Machine Learning Models and A/B Testing</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Optimizing the Content Delivery Network (CDN)</span>
+        </div>
+        <a href="https://github.com/">Load Distribution and Edge Caching</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Data Analytics and Insights</span>
+        </div>
+        <a href="https://github.com/">Big Data Analytics and Predictive Analytics</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>Content-Based Filtering</span>
+        </div>
+        <a href="https://github.com/">NLP Models</a>
+      </div>
+      <div class="code">
+        <div class="title">
+          <img class="logo" src="https://img.icons8.com/color/48/000000/source-code.png" alt="logo">
+          <span>User Engagement Analysis</span>
+        </div>
+        <a href="https://github.com/">Association Rule Mining</a>
+      </div>
     </div>
   </section>
   <section id="performance-analysis" class="section">
